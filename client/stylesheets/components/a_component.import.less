@@ -1,0 +1,65 @@
+/*
+
+    Components.less
+
+    ...............
+
+    C O N T E N T S
+
+    ...............
+
+    010 Mixins
+    020 Masthead
+    030 Blocks
+        0310 Welcome
+
+
+*/
+
+
+/* ---------------------------------------
+
+    MIXINS
+
+
+----------------------------------------*/
+
+    .inverse {
+        background:@gray-darker;
+        color:white;
+    } 
+
+
+/* ---------------------------------------
+
+    MASTHEAD
+
+
+----------------------------------------*/
+
+    .mast {
+        .inverse;
+    }
+
+
+/* ---------------------------------------
+
+    Welcome Intro Block
+    Centralised title and description
+
+----------------------------------------*/
+
+    .welcome {
+        text-align:center;
+
+        h1 {
+            font-size:42px;
+            margin:1em;
+        }        
+
+        p {
+            font-size:16px;
+            line-height:1.8em;
+        }
+    }
+    
