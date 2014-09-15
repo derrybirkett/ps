@@ -14,6 +14,25 @@ if (Meteor.isClient) {
       Session.set("counter", Session.get("counter") + 1);
     }
   });
+
+
+    /* USERLIST */
+    Template.userDirectory.userInCollection = function() {
+        return Meteor.users.find();
+    };
+
+    /*
+    Alt Syntax
+    Template.userDirectory.helpers({
+        userInCollection: function() {
+            return Meteor.users.find();
+        }
+    });
+
+    */
+        
+
+
 }
 
 if (Meteor.isServer) {
