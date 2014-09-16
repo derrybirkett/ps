@@ -8,6 +8,6 @@ autopublish
 insecure
 less
 nemo64:bootstrap
-accounts-twitter
-accounts-ui
+mrt:accounts-ui-bootstrap-dropdown
+accounts-password
 
