@@ -8,6 +8,6 @@ autopublish
 insecure
 less
 nemo64:bootstrap
-mrt:accounts-ui-bootstrap-dropdown
 accounts-password
+accounts-ui
 

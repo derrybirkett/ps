@@ -20,22 +20,9 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="#">Link</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                 <ul class="nav navbar-nav navbar-right">
+                    <li>{{> loginButtons align="right"}}</li>
                   </ul>
-                </li>
-              </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav> 
@@ -67,7 +54,6 @@
             <p>Having your very own profile page with signups and all the social stuff is now as easy as pie.  Use the button below to sign up with twitter and we'll pull in your bio, background and avatar and give you a link to share to your friends.  Later, hook up your services, choose a domain name and you're live.</p>
             <p>
                 <button class="btn btn-default outline">Connect</button>
-                {{> loginButtons}}
             </p>
         </article>
 </template>
