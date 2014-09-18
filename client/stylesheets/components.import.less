@@ -1,0 +1,113 @@
+/*
+
+    Components.less
+
+    ...............
+
+    C O N T E N T S
+
+    ...............
+
+    010 Mixins
+    020 Masthead
+    030 Blocks
+        0310 Welcome
+    040 LOGIN
+
+
+*/
+
+
+/* ---------------------------------------
+
+    MIXINS
+
+
+----------------------------------------*/
+
+    .inverse {
+        background:@gray-darker;
+        color:white;
+    } 
+
+    .primary {
+        background-color: #6f5499;
+        background-image: -webkit-gradient(linear,left top,left bottom,from(#563d7c),to(#6f5499));
+        background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+        background-image: -o-linear-gradient(top,#563d7c 0,#6f5499 100%);
+        background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+        background-repeat: repeat-x;
+    }
+
+    /* Buttons */
+    .outline(@color: white) {
+        background-color: transparent;
+        border-color: white;
+        border-width: 2px;
+        padding: 1em 2em;
+        border-radius: 30px;
+        color: @color;
+        &.inverse {
+            background-color:white;
+            color:@gray-darker;
+        }
+    }
+
+
+/* ---------------------------------------
+
+    MASTHEAD
+
+
+----------------------------------------*/
+
+    .mast {
+        .inverse;
+        .primary;
+    }
+
+
+/* ---------------------------------------
+
+    Welcome Intro Block
+    Centralised title and description
+
+----------------------------------------*/
+
+    .welcome {
+        text-align:center;
+        padding:50px 0px;
+
+        h1 {
+            font-size:42px;
+            margin:1em;
+        }        
+
+        p {
+            font-size:16px;
+            line-height:1.8em;
+            padding:1em 2em;
+        }
+
+        button {
+            margin:2em 0em;
+            .outline;
+            &.hover {
+                .outline.inverse;
+            }
+        }
+    }
+    
+
+/* ---------------------------------------
+
+    LOGIN
+
+
+----------------------------------------*/
+
+    /* Modify accounts-ui to fit in navbar */
+    #login-buttons {
+        padding:15px 0px;
+    }
