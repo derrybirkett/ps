@@ -5,8 +5,8 @@
 
 ----------------------------------------*/
 
-    Template.userDirectory.helpers({
-        userInCollection: function() {
+    Template.directory.helpers({
+        user: function() {
             return Meteor.users.find();
         }
     });
