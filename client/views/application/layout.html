@@ -1,23 +1,11 @@
 <template name="layout">
-    <header class="mast">
 
-        {{> navbar}}
+    {{> navbar}}
 
-        <div class="container-fluid">
-            <section class="row">
-                  {{> hello}}
-            </section>
+    <div class="container-fluid">
+        <div class="row">
+            {{> yield}}
         </div>
-
-        <div class="container-fluid">
-            <section class="row">
-                  {{> userDirectory}}
-            </section>
-        </div>
-
-    </header>
-
-    <footer class="row">
-    </footer>
+    </div>
 
 </template>
