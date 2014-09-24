@@ -8,6 +8,7 @@
 
     ...............
 
+    000 Site    
     010 Mixins
     020 Masthead
     030 Blocks
@@ -19,6 +20,24 @@
 
 */
 
+
+/* COMPONENT IMPORTS */
+@import "components/user-card.import.less";
+@import "components/add-block.import.less";
+
+
+
+/* ---------------------------------------
+
+    Site
+
+
+----------------------------------------*/
+
+    body {
+        background:#222;
+        color:white;
+    }
 
 /* ---------------------------------------
 
@@ -79,10 +98,10 @@
 
     .welcome {
         text-align:center;
-        padding:50px 0px;
+        padding:100px 0px;
 
         h1 {
-            font-size:42px;
+            font-size:48px;
             margin:1em;
         }        
 
@@ -114,14 +133,3 @@
     #login-buttons a, .accounts-dialog a {
         text-decoration:none;
     }
-
-
-
-/* ---------------------------------------
-
-    050 USERS
-        0510 Usercard
-
-----------------------------------------*/
-
-    @import "components/usercard.import.less";
