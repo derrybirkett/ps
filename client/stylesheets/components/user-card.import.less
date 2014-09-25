@@ -6,7 +6,32 @@
 ----------------------------------------*/
 
     .user-card {
-         ul {
-            list-style:none;
+
+        &.mini {
+            text-align:left;
+            padding:50px 0px;
+            .h2, p { 
+                margin:0em 0em 0em 10px; padding:0em;
+            }
+            .h2 {   
+                font-size:24px;     
+                margin-bottom:5px;
+            }
+            p { 
+                font-size:14px;
+                line-height:normal;
+            }
         }
+
     }
+
+    /* Avatar */
+    .avatar {
+        width:60px; height:60px;
+        border-radius:50px;
+        background-position:center center;
+
+        img { max-width:100%; }
+    
+    }
+
