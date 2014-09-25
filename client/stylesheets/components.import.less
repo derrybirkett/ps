@@ -35,7 +35,7 @@
 ----------------------------------------*/
 
     body {
-        background:#222;
+        background:#333;
         color:white;
     }
 
@@ -45,6 +45,8 @@
 
 
 ----------------------------------------*/
+
+    @primary: #ef6953;
 
     .inverse {
         background:@gray-darker;
@@ -78,27 +80,15 @@
 
 /* ---------------------------------------
 
-    MASTHEAD
-
-
-----------------------------------------*/
-
-    .mast {
-        .inverse;
-        .primary;
-    }
-
-
-/* ---------------------------------------
-
-    Welcome Intro Block
+    Intro Block
     Centralised title and description
 
 ----------------------------------------*/
 
-    .welcome {
+    .block {
         text-align:center;
-        padding:100px 0px;
+        padding:100px 0px 0px;
+        background-color:@primary;
 
         h1 {
             font-size:48px;

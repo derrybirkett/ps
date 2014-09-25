@@ -1,6 +1,10 @@
 <template name="userDirectory">
-    <h2>User Directory</h2>
-    {{#each userInCollection }}
-        {{> userCard}}
-    {{/each}}
+    <section class="block">
+        <h2>User Directory</h2>
+        {{#each userInCollection }}
+            <div class="col-md-4">
+                {{> userCard}}
+            </div>
+        {{/each}}
+    </section>
 </template>
