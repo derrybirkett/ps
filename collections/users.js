@@ -8,16 +8,15 @@
 
 Meteor.methods({
 
-    'updateAccount': function(data) {
+    updateAccount: function(data) {
         
         /* Call Mongo Updates */
         var accountUpdate = Meteor.users.update(
-            Meteor.userID, 
-            {$set:{'profile':data}}
-        );
+            { _id: Meteor.userId() }, 
+            { $set: { 'profile':data } }
+        )
 
         /* Return */
         return accountUpdate;
     }
-
 });
