@@ -7,6 +7,18 @@
 
 ----------------------------------------*/
 
+    Users.allow({
+        update:ownsDocument,
+        remove:ownsDocument        
+    });
+
+
+    /* ---------------------------------------------------
+
+        METHODS
+
+
+    ----------------------------------------------------*/
     Meteor.methods({
 
         updateAccount: function(data) {
