@@ -2,21 +2,22 @@
 
     USERS COLLECTION
 
+    000 PERMISSIONS
     010 METHODS
 
 ----------------------------------------*/
 
-Meteor.methods({
+    Meteor.methods({
 
-    updateAccount: function(data) {
-        
-        /* Call Mongo Updates */
-        var accountUpdate = Meteor.users.update(
-            { _id: Meteor.userId() }, 
-            { $set: { 'profile':data } }
-        )
+        updateAccount: function(data) {
+            
+            /* Call Mongo Updates */
+            var accountUpdate = Meteor.users.update(
+                { _id: Meteor.userId() }, 
+                { $set: { 'profile':data } }
+            )
 
-        /* Return */
-        return accountUpdate;
-    }
-});
+            /* Return */
+            return accountUpdate;
+        }
+    });

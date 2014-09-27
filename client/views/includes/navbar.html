@@ -17,6 +17,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="{{pathFor 'directory'}}">Directory</a></li>
+            {{#if currentUser}}<li><a href="{{pathFor 'account'}}">Account</a></li>{{/if}}
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a>{{> loginButtons align="right"}}</a></li>
