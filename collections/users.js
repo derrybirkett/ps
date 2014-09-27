@@ -7,7 +7,7 @@
 
 ----------------------------------------*/
 
-    Users.allow({
+    Meteor.users.allow({
         update:ownsDocument,
         remove:ownsDocument        
     });
