@@ -17,7 +17,8 @@
 
             /* Fill object with form data */
             var accountUpdates = {
-                firstname: $(e.target).find('[name=firstname]').val()
+                firstname: $(e.target).find('[name=firstname]').val(),
+                bio: $(e.target).find('[name=bio]').val()
             };
 
             /* Call Serverside write method */
@@ -26,6 +27,8 @@
                 /* Error Handler */
                 if(error) {
                     throwError(error.reason);
+                } else {
+                    throwError("Success");
                 }
             }); 
         } 
