@@ -22,7 +22,11 @@
 
             /* Call Serverside write method */
             Meteor.call('updateAccount', accountUpdates, function(error,id) {
-                if(error) alert(error.reason);
+
+                /* Error Handler */
+                if(error) {
+                    throwError(error.reason);
+                }
             }); 
         } 
     });
