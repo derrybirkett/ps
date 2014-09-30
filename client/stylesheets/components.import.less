@@ -45,6 +45,10 @@
 
 ----------------------------------------*/
 
+    html, body {
+        height:100%;
+    }
+
     body {
         background:@primary;
         color:white;
@@ -71,7 +75,7 @@
     }
 
     /* Buttons */
-    .outline(@color: white) {
+    .btn-outline(@color: white) {
         background-color: transparent;
         border-color: white;
         border-width: 2px;
@@ -109,9 +113,9 @@
 
         button {
             margin:2em 0em;
-            .outline;
+            .btn-outline;
             &.hover {
-                .outline.inverse;
+                .btn-outline.inverse;
             }
         }
     }
@@ -149,7 +153,6 @@
     }
 
     .welcome {
-        padding:100px 0px;
         h1 {
             font-size:56px;
             margin-bottom:0em;
