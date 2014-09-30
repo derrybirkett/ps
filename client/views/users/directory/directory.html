@@ -1,13 +1,15 @@
 <template name="directory">
     <section class="directory block">
-        <div class="row">
-            <div class="container">
-                <h1>User Directory</h1>
-                {{#each user }}
-                    <div class="col-md-4">
-                        {{> userCard}}
-                    </div>
-                {{/each}}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <h1>User Directory</h1>
+                    {{#each user }}
+                        <div class="col-md-4">
+                            {{> userCard}}
+                        </div>
+                    {{/each}}
+                </div>
             </div>
         </div>
     </section>
