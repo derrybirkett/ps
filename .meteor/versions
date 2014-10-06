@@ -17,6 +17,7 @@ ctl-helper@1.0.3
 ctl@1.0.1
 ddp@1.0.9
 deps@1.0.4
+derrybirkett:errors@1.0.0
 ejson@1.0.3
 email@1.0.3
 fastclick@1.0.0
@@ -41,6 +42,7 @@ meteor@1.1.1
 minifiers@1.1.0
 minimongo@1.0.3
 mobile-status-bar@1.0.0
+mongo-livedata@1.0.5
 mongo@1.0.6
 nemo64:bootstrap-data@3.2.0-rc2
 nemo64:bootstrap@3.2.3

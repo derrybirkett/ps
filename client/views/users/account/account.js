@@ -26,9 +26,9 @@
 
                 /* Error Handler */
                 if(error) {
-                    throwError(error.reason);
+                    Errors.throw(error.reason);
                 } else {
-                    throwError("Success");
+                    Errors.throw("Success");
                 }
             }); 
         } 

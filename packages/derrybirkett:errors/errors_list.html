@@ -1,4 +1,4 @@
-<template name="errors">
+<template name="meteorErrors">
     <div class="errors row-fluid">
         {{#each errors}}
             {{> error}}
@@ -6,9 +6,13 @@
     </div>
 </template>
 
-<template name="error">
+<template name="meteorError">
     <div class="alert alert-warning alert-dismissible" role="alert">
       <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
       <strong>Warning!</strong> {{message}}
     </div>
+</template>
+
+<template name="accessDenied">
+  <div class="alert alert-error">You can't get here! Please log in.</div>
 </template>
