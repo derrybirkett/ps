@@ -6,10 +6,9 @@
 standard-app-packages
 less
 nemo64:bootstrap
-accounts-password
-accounts-ui
 iron:router
 sacha:spin
 accounts-twitter
 derrybirkett:errors
+accounts-ui
 

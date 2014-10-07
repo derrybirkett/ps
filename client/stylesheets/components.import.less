@@ -128,11 +128,34 @@
 
 ----------------------------------------*/
 
-    /* Modify accounts-ui to fit in navbar */
-    /* Modify accounts-ui to fit in navbar */
     #login-buttons a, .accounts-dialog a {
         text-decoration:none;
     }
+
+    /* Overwrites */
+    #login-buttons {
+        .login-button, .accounts-dialog .login-button {
+            padding: 8px 14px;
+            font-size: 80%;
+            line-height: 1;
+            .btn-outline;
+            &:hover {
+                .btn-outline.inverse;
+            }
+        }
+
+        /* Icon */
+        .login-image {
+            display: inline-block;
+            position: absolute;
+            left: 16px;
+            top: 9px; 
+            width: 16px;
+            height: 16px;
+        } 
+
+    }
+
 
 
 
