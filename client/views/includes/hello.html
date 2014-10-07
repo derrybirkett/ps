@@ -1,24 +1,34 @@
 <template name="hello">
-
-    <section class="block scene">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="container">
-
-                    <article class="welcome">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h1>Online in 3 seconds.</h1>
-                        </div>
-                        <div class="col-md-6 col-md-offset-3">
-                            <p>Honest.  Try connecting your twitter account and you'll have a user profile to share with friends in 3 seconds.  I'll even help you share it.</p>
-                            <p>
-                                <button class="btn btn-default outline">Connect Twitter</button>
-                            </p>
-                        </div>
-                    </article>
-
-                </div>
+    <div class="cover scene">
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <!-- hide
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Cover</h3>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
             </div>
+          </div>
+             -->
+          <div class="inner cover">
+            <h1><span class="glyphicon glyphicon-cloud"></span> </h1>
+            <h1 class="cover-heading">{{title}}</h1>
+            <p class="lead">{{description}}</p>
+            <p class="">{{>loginButtons}}</p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+    </div>
 </template>
