@@ -31,12 +31,24 @@ Router.map ->
     this.route 'directory',
         path: 'directory'
 
+    ###
+
+    PROFILE
+    This is a public route.
+    Visible even when no user is logged in.
+
+    ###
     this.route 'profile',
         path: '/profile/:_id'
         data: -> Meteor.users.findOne(this.params._id)
-        onBeforeAction: ->
-            if not Meteor.user() then Router.go 'home'
 
+    ###
+
+    ACCOUNT
+    This is a PRIVATE route.
+    Visible only when user is logged in, and only to owner.
+
+    ###
     this.route 'account',
         path: '/account'
         data: ->
