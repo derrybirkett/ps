@@ -1,41 +1,37 @@
 /* ---------------------------------------
 
     050 USERS
+        0500 Avatar Default
         0510 Usercard
 
 ----------------------------------------*/
 
-    .user-card {
+/* Avatar */
+.avatar
+    width 60px
+    height 60px
+    border-radius 50px
+    background-position center center
+    background-repeat none
+    margin 0 auto
 
-        &.mini {
-            text-align:left;
-            padding:50px 0px;
-            .h2, p {
-                margin:0em 0em 0em 10px; padding:0em;
-            }
-            .h2 {
-                font-size:24px;
-                margin-bottom:5px;
-            }
-            p {
-                font-size:14px;
-                line-height:normal;
-            }
-        }
+    img
+        width 100%
+        max-width 100%
 
-    }
+/* Usercard */
+.user-card
+    &.mini
+        text-align left
+        padding 50px 0px
+        .h2, p
+            margin 0em 0em 0em 10px
+            padding 0em
 
-    /* Avatar */
-    .avatar {
-        width:60px; height:60px;
-        border-radius:50px;
-        background-position:center center;
-        background-repeat:none;
-        margin:0 auto;
+        .h2
+            font-size 24px
+            margin-bottom 5px
 
-        img {
-            width:100%;
-            max-width:100%;
-        }
-
-    }
+        p
+            font-size 14px
+            line-height normal

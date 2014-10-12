@@ -63,31 +63,27 @@ body
 
 ----------------------------------------*/
 
+white()
+  background-color white
+  color gray-darker
 
-.inverse
+inverse()
   background #333
   color white
 
-
-.primary
-  background-color  $primary
+primary()
+  background-color $primary
   a
     color white
 
-
-
 /* Buttons */
-.btn-outline(color = white)
+btn-outline($color = white)
   background-color transparent
-  border-color white
+  border-color $color
   border-width 2px
   padding 1em 2em
   border-radius 30px
-  color color
-  &.inverse, &.active
-    background-color white
-    color $gray-darker
-
+  color $color
 
 /* ---------------------------------------
 
@@ -99,7 +95,7 @@ body
 .block
   text-align center
   padding 100px 0px 50px
-  $primary
+  primary()
 
   h1
     margin 1em 0em
@@ -113,9 +109,7 @@ body
 
   button
     margin 2em 0em
-    btn-outline
-    &.hover
-        btn-outline inverse
+
 
 /* ---------------------------------------
 
@@ -135,12 +129,12 @@ body
 /* Overwrites */
 #login-buttons
   .login-button, .accounts-dialog .login-button
-    padding  8px 14px
-    font-size  80%
+    padding 8px 14px
+    font-size 80%
     line-height  1
-    btn-outline
-    & hover
-        btn-outline inverse
+    btn-outline()
+    &:hover
+        white()
 
   /* Icon */
   .login-image
@@ -168,4 +162,4 @@ body
   h1
     font-size 56px
     margin-bottom 0em
-    letter-spacing  -1px
+    letter-spacing -1px
