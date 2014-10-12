@@ -1,0 +1,171 @@
+/*
+
+    Components
+
+    ...............
+
+    C O N T E N T S
+
+    ...............
+
+    CONFIG
+    000 Site
+    010 Mixins
+    020 Masthead
+    030 Blocks
+        0310 Welcome
+    040 LOGIN
+    050 USERS
+        0510 UserCard
+
+
+*/
+
+
+/* ---------------------------------------------------
+
+    CONFIG
+
+
+----------------------------------------------------*/
+
+primary = #4E5B64
+gray-darker = #333
+
+@import nib
+
+/* COMPONENT IMPORTS */
+@import "components/user-card.import.styl"
+@import "components/add-block.import.styl"
+@import "components/sidepanel.import.styl"
+
+
+/* ---------------------------------------
+
+    Site
+
+
+----------------------------------------*/
+
+html, body
+  height 100%
+
+
+body
+  background $primary
+  color white
+
+
+/* ---------------------------------------
+
+    MIXINS
+
+
+----------------------------------------*/
+
+
+.inverse
+  background #333
+  color white
+
+
+.primary
+  background-color  $primary
+  a
+    color white
+
+
+
+/* Buttons */
+.btn-outline(color = white)
+  background-color transparent
+  border-color white
+  border-width 2px
+  padding 1em 2em
+  border-radius 30px
+  color color
+  &.inverse, &.active
+    background-color white
+    color $gray-darker
+
+
+/* ---------------------------------------
+
+    Intro Block
+    Centralised title and description
+
+----------------------------------------*/
+
+.block
+  text-align center
+  padding 100px 0px 50px
+  $primary
+
+  h1
+    margin 1em 0em
+
+
+  p
+    font-size 16px
+    line-height 1.8em
+    padding 1em 2em
+
+
+  button
+    margin 2em 0em
+    btn-outline
+    &.hover
+        btn-outline inverse
+
+/* ---------------------------------------
+
+    LOGIN BUTTONS
+    Meteor accounts-ui overwrites
+        Login button & dialog
+        Login image
+        Username
+
+
+----------------------------------------*/
+
+#login-buttons a, .accounts-dialog a
+  text-decoration none
+
+
+/* Overwrites */
+#login-buttons
+  .login-button, .accounts-dialog .login-button
+    padding  8px 14px
+    font-size  80%
+    line-height  1
+    btn-outline
+    & hover
+        btn-outline inverse
+
+  /* Icon */
+  .login-image
+    display  inline-block
+    position  absolute
+    left  16px
+    top  9px
+    width  16px
+    height  16px
+
+/* ---------------------------------------
+
+    Scenes
+    For the mastheads
+
+
+----------------------------------------*/
+
+.scene
+  background-image url('/img/header.jpg')
+  background-position center center
+  background-size cover
+
+.welcome
+  h1
+    font-size 56px
+    margin-bottom 0em
+    letter-spacing  -1px

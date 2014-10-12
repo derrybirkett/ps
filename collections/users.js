@@ -9,7 +9,7 @@
 
     Meteor.users.allow({
         update:ownsDocument,
-        remove:ownsDocument        
+        remove:ownsDocument
     });
 
 
@@ -22,10 +22,10 @@
     Meteor.methods({
 
         updateAccount: function(data) {
-            
+
             /* Call Mongo Updates */
             var accountUpdate = Meteor.users.update(
-                { _id: Meteor.userId() }, 
+                { _id: Meteor.userId() },
                 { $set: { 'account':data } }
             )
 

@@ -12,4 +12,6 @@ accounts-twitter
 derrybirkett:errors
 accounts-ui
 coffeescript
+stylus
+mquandalle:jade
 
