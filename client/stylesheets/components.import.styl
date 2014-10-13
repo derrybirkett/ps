@@ -9,8 +9,8 @@
     ...............
 
     CONFIG
-    000 Site
-    010 Mixins
+    000 Mixins
+    010 Site
     020 Masthead
     030 Blocks
         0310 Welcome
@@ -32,28 +32,11 @@
 primary = #4E5B64
 gray-darker = #333
 
-@import nib
-
 /* COMPONENT IMPORTS */
+@import nib
 @import "components/user-card.import.styl"
 @import "components/add-block.import.styl"
 @import "components/sidepanel.import.styl"
-
-
-/* ---------------------------------------
-
-    Site
-
-
-----------------------------------------*/
-
-html, body
-  height 100%
-
-
-body
-  background $primary
-  color white
 
 
 /* ---------------------------------------
@@ -81,9 +64,24 @@ btn-outline($color = white)
   background-color transparent
   border-color $color
   border-width 2px
-  padding 1em 2em
+  padding 0.6em 1.5em
   border-radius 30px
   color $color
+
+/* ---------------------------------------
+
+    Site
+
+
+----------------------------------------*/
+
+html, body, #MainPanel
+  height 100%
+
+
+body
+  background $primary
+  color white
 
 /* ---------------------------------------
 

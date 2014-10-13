@@ -4,8 +4,16 @@ Sidepanel
 
 */
 
-.sidepanel {
-  display:none;
-  width:320px;
-  margin-left:-320px;
-}
+.side-panel
+    position fixed
+    width 300px
+    background rgba(0,0,0,0.7);
+    padding 20px
+    // margin-left -@width
+    &.active
+        margin-left 0px
+
+    input
+        btn-outline()
+        background-color transparent
+        color white
