@@ -1,4 +1,4 @@
-template.layout.events({
+Template.layout.events({
     "click .usher": function(e) {
         e.preventDefault;
     

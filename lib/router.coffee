@@ -30,6 +30,9 @@ Router.map ->
 
     this.route 'directory',
         path: 'directory'
+        data: ->
+            user: ->
+                Meteor.users.find();
 
     ###
 

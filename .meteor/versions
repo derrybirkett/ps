@@ -44,6 +44,7 @@ mobile-status-bar@1.0.0
 mongo-livedata@1.0.5
 mongo@1.0.6
 mquandalle:jade@0.2.8
+mrt:googleanalytics@0.0.8
 nemo64:bootstrap-data@3.2.0-rc2
 nemo64:bootstrap@3.2.3
 oauth1@1.1.0
