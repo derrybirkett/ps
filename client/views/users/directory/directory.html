@@ -1,16 +1,25 @@
 <template name="directory">
-    <section class="directory block scene">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="container">
-                    <h1>User Directory</h1>
-                    {{#each user}}
-                        <div class="col-md-4">
-                            {{> userCard}}
-                        </div>
-                    {{/each}}
-                </div>
+    <div class="cover scene nano">
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="inner">
+                <section class="directory row">
+                        <h1>User Directory</h1>
+                        {{#each user}}
+                                {{> userCard}}
+                        {{/each}}
+                </section>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner centered">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
             </div>
-        </div>
-    </section>
+          </div>
+
+        </div><!-- covercontainer -->
+      </div><!-- sitewrapperinner -->
+    </div><!-- sitewrapper -->
+    </div><!-- cover -->
 </template>
