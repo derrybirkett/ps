@@ -1,0 +1,17 @@
+template(name="account")
+
+        h1 Account Settings   
+        
+        form
+            .form-group
+                label Firstname
+                input(type="text" name="firstname" placeholder="First name").form-control
+
+            .form-group
+                label Bio
+                textarea#Bio(name="bio").form-control
+                    | {{account.bio}}
+
+            .form-group
+                button(type="submit" value="{{account.firstname}}").btn.btn-default
+                    | Save

@@ -4,10 +4,6 @@ Template.layout.events({
 
         console.log('Clicked');
 
-        /* Fetch target from DOM */
-        var target = $(e.target).data("target");
-
-        $(this).toggleClass('active');
-        $(target).toggleClass('active');
+        $('#LeftPanel').toggleClass('active');
     }
 });

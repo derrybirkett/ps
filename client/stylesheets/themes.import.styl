@@ -2,15 +2,30 @@
 
 THEMES
 
-010 Cover (bootstrap)
+    010 Cover (bootstrap)
+    020 Nano
+    030 Scenes (to sort)
 
 */
 
-
-.cover {
-    height:100%; // necessary for full height
-    @import "themes/cover.import.styl";
-}
-
-
+@import "themes/cover.import.styl";
 @import "themes/nano.import.styl";
+
+/* ---------------------------------------
+
+    Scenes
+    For the mastheads
+
+----------------------------------------*/
+
+.scene
+  background-image url('/img/header.jpg')
+  background-position center center
+  background-size cover
+
+.welcome
+  h1
+    font-size 56px
+    margin-bottom 0em
+    letter-spacing -1px
+

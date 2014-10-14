@@ -1,0 +1,127 @@
+/* ---------------------------------------
+
+SITEWIDE
+Sitewide mixins and styles not related
+to specific components
+
+    000 CONFIG
+        0010 PALETTE
+    010 MIXINS
+
+----------------------------------------*/
+
+/* ---------------------------------------
+
+    000 CONFIG 
+        0010 PALETTE
+
+----------------------------------------*/
+
+primary = #4E5B64
+gray-darker = #333
+
+/* ---------------------------------------
+
+    010 MIXINS
+        0110 Generic Styles
+            01110 White
+            01120 Dark
+            01130 Primary
+        0130 BUTTONS
+            01310 Outline
+
+----------------------------------------*/
+
+/* Generic Styles */
+
+light()
+  background-color white
+  color gray-darker
+
+white()
+  background-color white
+  color gray-darker
+
+dark()
+  background #333
+  color white
+
+primary()
+  background-color $primary
+  a
+    color white
+
+rounded()
+    border-radius 30px
+
+outline($color = white)
+  background-color transparent
+  border-color $color
+  border-width 2px
+  color $color
+
+/* Buttons */
+btn()
+   rounded() 
+
+
+
+/* ---------------------------------------
+
+    Site
+
+
+----------------------------------------*/
+
+*
+    transition all 0.3s ease
+
+html, body, #MainPanel
+  height 100%
+
+
+body
+  background primary
+  color white
+
+/* ---------------------------------------
+
+    Intro Block
+    Centralised title and description
+
+----------------------------------------*/
+
+.block
+  text-align center
+  padding 100px 0px 50px
+  primary()
+
+  h1
+    margin 1em 0em
+
+  p
+    font-size 16px
+    line-height 1.8em
+    padding 1em 2em
+
+  button
+    margin 2em 0em
+
+
+
+/* ---------------------------------------
+
+    FORMs
+
+
+----------------------------------------*/
+
+form 
+    .form-control
+        outline()
+        padding 1em 0.5em
+        font-size 24px
+        font-weight 100
+    .btn
+        white()
+        rounded()
