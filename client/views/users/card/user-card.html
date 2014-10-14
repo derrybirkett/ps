@@ -7,7 +7,8 @@
                 </div>
                 <div class="col-md-8">
                     <h1 class="h2"><a href="{{pathFor 'profile'}}">{{profile.name}}</a></h1>
-                    <p>Here is a very short bio, maybe on two lines, or three. But no more.</p>
+                    {{#if account.bio}}<p>{{account.bio}}</p>{{/if}}
+                    <p class="smallcaps"><a href="http://twitter.com/{{services.twitter.screenName}}">@{{services.twitter.screenName}}</a></p>
                 </div>
         </article>
     </div>
