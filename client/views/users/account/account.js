@@ -4,6 +4,7 @@
 
     010 EVENTS
     020 HELPERS
+    030 FUNCTIONS
 
 ----------------------------------------*/
 
@@ -32,4 +33,16 @@
                 }
             }); 
         } 
+    });
+
+
+    /* 
+     * 020 HELPERS 
+        I wanted to attach the userdata to the accounnt panel for every page, but it doesn't seem to be working.
+     */
+
+    Template.account.helpers({
+        data: function() {
+                return Meteor.users.findOne(Meteor.userId());
+        }
     });
